@@ -46,7 +46,7 @@ void serveur_func() {
 
         // Check if there is a player in the waiting area, during the 3 second waiting
         if (count_player > 0) {
-            cout << "Le serveur fait entré un joueur. \n";
+            cout << "Le serveur fait entré des joueurs. \n";
 
             serveur_semaphore.release();
             allAboard.acquire();
