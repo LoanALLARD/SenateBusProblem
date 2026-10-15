@@ -48,8 +48,9 @@ void serveur_func() {
         if (count_player > 0) {
             cout << "Le serveur fait entré un joueur. \n";
 
-            serveur_semaphore.release();
             allAboard.acquire();
+            serveur_semaphore.release();
+
         } else {
             cout << "Le serveur est vide. La partie est lancé.\n";
         }

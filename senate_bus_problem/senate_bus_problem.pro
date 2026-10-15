@@ -4,7 +4,8 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        machmaking.cpp \
-        main.cpp
+        main.cpp \
+        matchmaking.cpp \
+        matchmaking_deadlock.cpp
 
 HEADERS +=
