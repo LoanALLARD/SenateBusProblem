@@ -1,10 +1,10 @@
 # SenateBusProblem
 
-- Un samaphore c'est une compteur
-    - Si on occupe une place on décremente le compteur, s'il est à zéro on peu rien faire et on attend.
-- Un mutex c'est comme une clé d'accée
-  - Il permet de gérer l'ordre de passage de chaque thread.
-    - Exemple : Imaginon des toilette. Une seul personne peut passer à la fois et cette personne détien une clé. Celui qui est dans les toilette à la clé et les autres attende de recevoir la clé pour pouvoir rentrer.
+- Un sémaphore est un compteur.
+    - Si on occupe une place, on décrémente le compteur. S'il est à zéro, on ne peut rien faire et on attend.
+- Un mutex, c'est comme une clé d'accès.
+    - Il permet de gérer l'ordre de passage de chaque thread.
+        - Exemple : Imaginons des toilettes. Une seule personne peut passer à la fois et cette personne détient une clé. Celui qui est dans les toilettes a la clé et les autres attendent de recevoir la clé pour pouvoir rentrer.
 
 ## CPP REFERENCE
 
@@ -14,7 +14,7 @@
 #include <semaphore>
 #include <thread>
 
-std::counting_semaphore<3> count = 3 
+std::counting_semaphore<3> count = 3
 // Par exemple on a trois place au maximum dans un parking
 
 int main() {
@@ -68,3 +68,4 @@ int main() {
     return 0;
 }
 
+```
