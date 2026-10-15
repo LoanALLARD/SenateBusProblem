@@ -1,11 +1,5 @@
 # SenateBusProblem
 
-- Un sémaphore est un compteur.
-    - Si on occupe une place, on décrémente le compteur. S'il est à zéro, on ne peut rien faire et on attend.
-- Un mutex, c'est comme une clé d'accès.
-    - Il permet de gérer l'ordre de passage de chaque thread.
-        - Exemple : Imaginons des toilettes. Une seule personne peut passer à la fois et cette personne détient une clé. Celui qui est dans les toilettes a la clé et les autres attendent de recevoir la clé pour pouvoir rentrer.
-
 ## CPP REFERENCE
 
 ### counting_semaphore
