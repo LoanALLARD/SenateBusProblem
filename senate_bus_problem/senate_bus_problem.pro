@@ -4,4 +4,7 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        machmaking.cpp \
         main.cpp
+
+HEADERS +=
