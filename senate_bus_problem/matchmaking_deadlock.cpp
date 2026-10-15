@@ -54,8 +54,8 @@ void serveur_func() {
              * Comme le serveur n'arrive jamais à son release(), personne ne peut
              * débloquer personne : c'est une attente circulaire.
              */
-            allAboard.acquire();
-            serveur_semaphore.release();
+            allAboard.acquire(); // Le serveur s'endort en attendant la réponse du dernier joueurs...
+            serveur_semaphore.release(); // ... mais il devait executer CETTE ligne pour réveiller le joueur et donc lui permettre de débloquer le serveur.
 
         } else {
             cout << "Le serveur est vide. La partie est lancé.\n";
